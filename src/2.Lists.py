@@ -34,8 +34,12 @@ buffer = []
 for i in range(1, 6):
     buffer.append(f"record_{i}")
     print(f"Buffer: {buffer}")
+print(f"\nFinal batch: {buffer}")
+buffer.clear()
+print(f"After clear(): {buffer}")
 
 
+#OUTPUT
 Numbers: [1, 2, 3, 4, 5]
 Mixed: [1, 'string', 3.14, True]
 Nested: [[1, 2], [3, 4], [5, 6]]
@@ -57,6 +61,4 @@ Buffer: ['record_1', 'record_2', 'record_3', 'record_4', 'record_5']
 
 Final batch: ['record_1', 'record_2', 'record_3', 'record_4', 'record_5']
 After clear(): []
-print(f"\nFinal batch: {buffer}")
-buffer.clear()
-print(f"After clear(): {buffer}")
+
